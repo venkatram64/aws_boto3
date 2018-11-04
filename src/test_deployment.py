@@ -96,7 +96,7 @@ def main():
     #Launching public  EC2 Instance
     ec2.launch_ec2_instance(ami_id, key_pair_name, 1, 1, public_security_group_id, public_subnet_id, user_data)
 
-    print("Launching public EC2 Instance using AMI ami-0b59bfac6be064b78")
+    print("Launching public EC2 Instance using AMI ami-ddddddddd")
 
     #Adding another security group for private EC2 Instance
     private_security_group_name = "Boto3-Private-SG"
@@ -111,7 +111,7 @@ def main():
     #Launching private EC2 Instance
     ec2.launch_ec2_instance(ami_id, key_pair_name, 1, 1, private_security_group_id, private_subnet_id, """""")
 
-    print("Launching private EC2 Instance using AMI ami-0b59bfac6be064b78")
+    print("Launching private EC2 Instance using AMI ami-dddddddddd")
 
 
 def describe_instances():
